@@ -14,6 +14,9 @@
 		5375A438275FC57100BFFD46 /* SwiftUICapsuleCollectiinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A437275FC57100BFFD46 /* SwiftUICapsuleCollectiinTests.swift */; };
 		5375A442275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A441275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITests.swift */; };
 		5375A444275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A443275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITestsLaunchTests.swift */; };
+		5375A451275FC62900BFFD46 /* CapsuleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A450275FC62900BFFD46 /* CapsuleCollectionView.swift */; };
+		5375A454275FCBE300BFFD46 /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A453275FCBE300BFFD46 /* CapsuleView.swift */; };
+		5375A456275FD03800BFFD46 /* CapsuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5375A455275FD03800BFFD46 /* CapsuleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		5375A43D275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICapsuleCollectiinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5375A441275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICapsuleCollectiinUITests.swift; sourceTree = "<group>"; };
 		5375A443275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICapsuleCollectiinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5375A450275FC62900BFFD46 /* CapsuleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleCollectionView.swift; sourceTree = "<group>"; };
+		5375A453275FCBE300BFFD46 /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
+		5375A455275FD03800BFFD46 /* CapsuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			children = (
 				5375A426275FC56E00BFFD46 /* SwiftUICapsuleCollectiinApp.swift */,
 				5375A428275FC56E00BFFD46 /* ContentView.swift */,
+				5375A452275FCB9500BFFD46 /* CapsuleCollectionView */,
 				5375A42A275FC57100BFFD46 /* Assets.xcassets */,
 				5375A42C275FC57100BFFD46 /* Preview Content */,
 			);
@@ -125,6 +132,16 @@
 				5375A443275FC57100BFFD46 /* SwiftUICapsuleCollectiinUITestsLaunchTests.swift */,
 			);
 			path = SwiftUICapsuleCollectiinUITests;
+			sourceTree = "<group>";
+		};
+		5375A452275FCB9500BFFD46 /* CapsuleCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5375A450275FC62900BFFD46 /* CapsuleCollectionView.swift */,
+				5375A453275FCBE300BFFD46 /* CapsuleView.swift */,
+				5375A455275FD03800BFFD46 /* CapsuleData.swift */,
+			);
+			path = CapsuleCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5375A454275FCBE300BFFD46 /* CapsuleView.swift in Sources */,
+				5375A456275FD03800BFFD46 /* CapsuleData.swift in Sources */,
 				5375A429275FC56E00BFFD46 /* ContentView.swift in Sources */,
 				5375A427275FC56E00BFFD46 /* SwiftUICapsuleCollectiinApp.swift in Sources */,
+				5375A451275FC62900BFFD46 /* CapsuleCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
