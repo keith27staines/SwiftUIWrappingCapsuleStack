@@ -7,34 +7,34 @@
 
 import SwiftUI
 
-class CapsuleCollectionViewModel: ObservableObject {
-
-    var capsules = [
-        "123",
-        "123456789",
-        "1234567890",
-        "1234567",
-        "1",
-        "1234567890123456789"
-    ].map { text in
-        CapsuleData(text: text, capRadius: 10)
-    }
-    
-}
-
 struct CapsuleCollectionView: View {
     
-    @ObservedObject var vm = CapsuleCollectionViewModel()
+    @State private var height: CGFloat = 0
+    
+    var data: [CapsuleData]
     
     var body: some View {
-        ForEach(vm.capsules) { capsuleData in
-            CapsuleView(capsuleData: capsuleData)
-        }
+        GeometryReader { geo in
+            CapsuleGridView(containerWidth: geo.size.width, capsulesData: data, height: $height)
+                .background(Color.white)
+                .frame(height: height)
+        }.frame(height: height)
     }
 }
 
 struct CapsuleCollectionView_Previews: PreviewProvider {
     static var previews: some View {
-        CapsuleCollectionView()
+        let capsulesData = [
+            "123",
+            "123456789",
+            "1234567890",
+            "1234567",
+            "1",
+            "1234567890123456789"
+        ].map { text in
+            CapsuleData(text: text, capRadius: 20)
+        }
+        CapsuleCollectionView(data: capsulesData)
+            .padding()
     }
 }
