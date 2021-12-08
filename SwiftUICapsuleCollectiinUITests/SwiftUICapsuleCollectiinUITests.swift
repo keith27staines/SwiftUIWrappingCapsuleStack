@@ -1,6 +1,6 @@
 //
-//  SwiftUICapsuleCollectiinUITests.swift
-//  SwiftUICapsuleCollectiinUITests
+//  SwiftUIWrappingCapsuleStackUITests.swift
+//  SwiftUIWrappingCapsuleStackUITests
 //
 //  Created by Keith Staines on 07/12/2021.
 //

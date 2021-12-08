@@ -1,12 +1,12 @@
 //
-//  SwiftUICapsuleCollectiinTests.swift
-//  SwiftUICapsuleCollectiinTests
+//  SwiftUIWrappingCapsuleStackTests.swift
+//  SwiftUIWrappingCapsuleStackTests
 //
 //  Created by Keith Staines on 07/12/2021.
 //
 
 import XCTest
-@testable import SwiftUICapsuleCollectiin
+@testable import SwiftUIWrappingCapsuleStack
 
 class SwiftUICapsuleCollectiinTests: XCTestCase {
 
